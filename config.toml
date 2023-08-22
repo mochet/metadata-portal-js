@@ -11,6 +11,22 @@ ethereum_public_key = "031b195495f907908aeedd8e9a0ae128dcf23b6a7425dd16d282df7d8
 name = "Parity"
 public_key = "c46a22b9da19540a77cbde23197e5fd90485c72b4ecf3c599ecca6998f39bd57"
 
+
+[verifiers.tomato]
+  [verifiers.tomato]
+    name = "tomato"
+    public_key = "5EHFGME5cGrZHT3AQnzbwdc4Cy3catT7nUxDpzZqu3bcYxHV"
+
+[chains]
+  [chains.Joystream]
+  name = "joystream"
+  color = "#4038ff"
+  verifier = "tomato"
+  rpc_endpoints = [
+    "wss://rpc.joystream.org"]
+  testnet = false
+  verifier = "tomato"
+
 [[chains]]
 name = "polkadot"
 title = "Polkadot"
